@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://omdandevelopment.com/artificial-turf/">
+
+  <title>Artificial Turf Installation in Palm Springs | Lawns, Pet Turf & Putting Greens</title>
+  <meta name="description" content="Artificial turf installation in Palm Springs and the Coachella Valley for pet turf, low-maintenance lawns, putting greens, and poolside areas. Built with clean edges and proper drainage." />
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#0f172a",
+            muted: "#475569",
+            line: "#e2e8f0",
+            soft: "#f8fafc",
+            brand: "#2563eb",
+            brand2: "#0ea5e9",
+            success: "#16a34a"
+          },
+          fontFamily: { sans: ["Montserrat", "sans-serif"] }
+        }
+      }
+    }
+  </script>
+
+  <!-- Feather icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <style>
+    /* hard stop horizontal scroll on mobile */
+    html, body { max-width: 100%; overflow-x: hidden; }
+
+    .hero-bg{
+      background:
+        linear-gradient(135deg, rgba(15,23,42,.92), rgba(14,165,233,.18)),
+        url("/assets/at 1.webp") center/cover no-repeat;
+    }
+
+    /* hide scrollbars for carousels */
+    .no-scrollbar::-webkit-scrollbar{display:none}
+    .no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}
+
+    /* simple reveal */
+    .scroll-reveal{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
+    .scroll-reveal.visible{opacity:1;transform:translateY(0)}
+
+    /* lightbox */
+    @keyframes fadeIn { from {opacity:0; transform:scale(.98)} to {opacity:1; transform:scale(1)} }
+    .animate-fade-in{ animation: fadeIn .22s ease-out }
+
+    /* small section title underline (budget-friendly, not “luxury”) */
+    .title-accent{display:inline-block; position:relative; padding-bottom:.4rem}
+    .title-accent:after{
+      content:""; position:absolute; left:50%; bottom:0; transform:translateX(-50%);
+      height:3px; width:56%; max-width:260px;
+      background: linear-gradient(90deg, rgba(37,99,235,.1), rgba(37,99,235,1), rgba(37,99,235,.1));
+      border-radius:999px;
+    }
+  </style>
+
+  <!-- Web3Forms client (includes hCaptcha automatically) -->
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="/assets/favicon.ico">
+</head>
+
+<body class="bg-white font-sans text-ink">
+  <!-- Nav -->
+  <nav class="fixed top-0 inset-x-0 bg-white/95 backdrop-blur border-b border-line z-50">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3 min-w-0" aria-label="Home">
+        <img src="/assets/logo.webp" alt="Omdan Development logo" class="h-10 w-auto flex-shrink-0" />
+        <span class="font-semibold text-base sm:text-lg truncate">Omdan Development</span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a href="/#about" class="text-muted hover:text-ink font-medium transition">About</a>
+        <a href="/#services" class="text-muted hover:text-ink font-medium transition">Services</a>
+        <a href="#gallery" class="text-muted hover:text-ink font-medium transition">Gallery</a>
+        <a href="#contact" class="text-muted hover:text-ink font-medium transition">Contact</a>
+        <a href="#contact" class="bg-brand text-white px-5 py-2 rounded-lg font-semibold hover:opacity-95 transition">
+          Get a Free Estimate
+        </a>
+      </div>
+
+      <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-soft border border-line"
+        aria-label="Open menu" aria-expanded="false">
+        <i data-feather="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden border-t border-line bg-white">
+      <div class="max-w-7xl mx-auto px-5 sm:px-6 py-4 flex flex-col gap-4">
+        <a href="/#about" class="text-muted hover:text-ink font-medium">About</a>
+        <a href="/#services" class="text-muted hover:text-ink font-medium">Services</a>
+        <a href="#gallery" class="text-muted hover:text-ink font-medium">Gallery</a>
+        <a href="#contact" class="text-muted hover:text-ink font-medium">Contact</a>
+        <a href="#contact" class="bg-brand text-white px-5 py-2 rounded-lg text-center font-semibold hover:opacity-95">
+          Get a Free Estimate
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- spacer for fixed nav -->
+  <div class="h-20"></div>
+
+  <!-- Hero -->
+  <header class="hero-bg">
+    <div class="max-w-5xl mx-auto px-5 sm:px-6 py-16 md:py-24 text-center scroll-reveal">
+      <h1 class="text-3xl md:text-5xl font-bold text-white mb-4">Artificial Turf Installation in Palm Springs</h1>
+      <p class="text-white/90 text-base md:text-lg max-w-3xl mx-auto">
+        Pet-friendly lawns, putting greens, poolside turf, rooftops and low-maintenance yards—built with proper drainage and clean edges.
+      </p>
+      <p class="text-white/80 mt-3">
+  Based in Palm Springs, we install artificial turf for homes and businesses across surrounding Southern California communities.
+</p>
+
+
+      <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="#contact" class="bg-white text-ink px-7 py-3 rounded-lg font-semibold hover:bg-white/95 transition inline-flex items-center justify-center gap-2">
+          <i data-feather="calendar" class="w-4 h-4"></i>
+          Get a Free Estimate
+        </a>
+        <a href="tel:(951)292-0703" class="bg-brand text-white px-7 py-3 rounded-lg font-semibold hover:opacity-95 transition inline-flex items-center justify-center gap-2">
+          <i data-feather="phone" class="w-4 h-4"></i>
+          Call Now
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Intro -->
+  <section class="py-14 md:py-16">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 grid md:grid-cols-2 gap-8 md:gap-12 items-center overflow-hidden">
+      <img
+        src="/assets/hs.webp"
+        alt="Artificial turf backyard"
+        class="w-full rounded-2xl border border-line shadow-sm object-cover"
+        loading="lazy"
+        decoding="async"
+      />
+      <div class="scroll-reveal">
+        <h2 class="text-2xl md:text-3xl font-bold title-accent">Clean install. Built to work.</h2>
+        <p class="mt-5 text-base md:text-lg text-muted">
+          We install turf for front yards, backyards, pet runs, rooftops, pool areas and putting greens. We focus on base compaction, drainage,
+          tight seams, and tidy borders—so it looks good and holds up.
+        </p>
+
+        <ul class="mt-6 space-y-3 text-muted">
+          <li class="flex items-start gap-2">
+            <i data-feather="check" class="w-5 h-5 text-success flex-shrink-0"></i>
+            Cooling / odor-control infill options
+          </li>
+          <li class="flex items-start gap-2">
+            <i data-feather="check" class="w-5 h-5 text-success flex-shrink-0"></i>
+            Kid &amp; pet friendly, mud-free, low maintenance
+          </li>
+          <li class="flex items-start gap-2">
+            <i data-feather="check" class="w-5 h-5 text-success flex-shrink-0"></i>
+            Clean seams and edges with hidden joins
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  
+<section class="max-w-7xl mx-auto px-6 py-12" id="service-areas">
+  <div class="bg-white border border-line rounded-2xl p-6 md:p-8 shadow-sm">
+    <h2 class="text-2xl md:text-3xl font-extrabold mb-4">Artificial Turf Service Areas</h2>
+    <p class="text-gray-700 mb-5">We provide artificial turf services across Palm Springs and surrounding Southern California communities.</p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+      <a href="/artificial-turf/desert-hot-springs/" class="text-brand font-semibold hover:underline">Artificial Turf in Desert Hot Springs</a>
+      <a href="/artificial-turf/moreno-valley/" class="text-brand font-semibold hover:underline">Artificial Turf in Moreno Valley</a>
+      <a href="/artificial-turf/palm-desert/" class="text-brand font-semibold hover:underline">Artificial Turf in Palm Desert</a>
+      <a href="/artificial-turf/palm-springs/" class="text-brand font-semibold hover:underline">Artificial Turf in Palm Springs</a>
+      <a href="/artificial-turf/murrieta/" class="text-brand font-semibold hover:underline">Artificial Turf in Murrieta</a>
+      <a href="/artificial-turf/menifee/" class="text-brand font-semibold hover:underline">Artificial Turf in Menifee</a>
+      <a href="/artificial-turf/twentynine-palms/" class="text-brand font-semibold hover:underline">Artificial Turf in Twentynine Palms</a>
+      <a href="/artificial-turf/yucaipa/" class="text-brand font-semibold hover:underline">Artificial Turf in Yucaipa</a>
+      <a href="/artificial-turf/yucca-valley/" class="text-brand font-semibold hover:underline">Artificial Turf in Yucca Valley</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Turf Types -->
+  <section class="py-16 bg-soft" id="turf-types">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-4xl font-bold title-accent">Popular Turf Types</h2>
+        <p class="text-muted mt-2">A few common options for lawns, pets, and putting greens.</p>
+      </div>
+
+      <h3 class="text-lg md:text-xl font-semibold mb-4">Landscape</h3>
+
+      <!-- MOBILE: swipe (fixed widths to avoid giant cards + side scroll) -->
+      <div class="md:hidden">
+        <div class="flex overflow-x-auto no-scrollbar gap-4 px-5 -mx-5 snap-x snap-mandatory"
+             style="scroll-padding-left:1.25rem;scroll-padding-right:1.25rem"
+             data-track="turf-landscape">
+
+          <!-- Card -->
+          <figure class="flex-none w-[85vw] max-w-[340px] bg-white rounded-2xl border border-line shadow-sm p-4 snap-center">
+            <img src="/assets/turf-sunrise.webp" alt="Sunrise turf" class="rounded-xl w-full h-44 object-cover" loading="lazy" decoding="async">
+            <figcaption class="mt-3">
+              <h4 class="font-semibold">Sunrise</h4>
+              <p class="text-muted text-sm">Soft, natural look for front and back yards.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="flex-none w-[85vw] max-w-[340px] bg-white rounded-2xl border border-line shadow-sm p-4 snap-center">
+            <img src="/assets/turf-monterey.webp" alt="Monterey turf" class="rounded-xl w-full h-44 object-cover" loading="lazy" decoding="async">
+            <figcaption class="mt-3">
+              <h4 class="font-semibold">Monterey</h4>
+              <p class="text-muted text-sm">Dense blades with realistic thatch.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="flex-none w-[85vw] max-w-[340px] bg-white rounded-2xl border border-line shadow-sm p-4 snap-center">
+            <img src="/assets/palm.webp" alt="Palm Green turf" class="rounded-xl w-full h-44 object-cover" loading="lazy" decoding="async">
+            <figcaption class="mt-3">
+              <h4 class="font-semibold">Palm Green</h4>
+              <p class="text-muted text-sm">Brighter color for strong curb appeal.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="flex-none w-[85vw] max-w-[340px] bg-white rounded-2xl border border-line shadow-sm p-4 snap-center">
+            <img src="/assets/turf-marathon.webp" alt="Marathon turf" class="rounded-xl w-full h-44 object-cover" loading="lazy" decoding="async">
+            <figcaption class="mt-3">
+              <h4 class="font-semibold">Marathon</h4>
+              <p class="text-muted text-sm">Durable everyday lawn solution.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="flex-none w-[85vw] max-w-[340px] bg-white rounded-2xl border border-line shadow-sm p-4 snap-center">
+            <img src="/assets/desert.webp" alt="Desert Green turf" class="rounded-xl w-full h-44 object-cover" loading="lazy" decoding="async">
+            <figcaption class="mt-3">
+              <h4 class="font-semibold">Desert Green</h4>
+              <p class="text-muted text-sm">Works great with drought-friendly landscaping.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="flex-none w-[85vw] max-w-[340px] bg-white rounded-2xl border border-line shadow-sm p-4 snap-center">
+            <img src="/assets/turf-pet.webp" alt="Pet Turf" class="rounded-xl w-full h-44 object-cover" loading="lazy" decoding="async">
+            <figcaption class="mt-3">
+              <h4 class="font-semibold">Pet Turf</h4>
+              <p class="text-muted text-sm">Fast drain + antimicrobial options for pets.</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="flex justify-center gap-2 mt-4" data-dots="turf-landscape">
+          <span class="dot w-2.5 h-2.5 rounded-full bg-slate-300"></span>
+          <span class="dot w-2.5 h-2.5 rounded-full bg-slate-300"></span>
+          <span class="dot w-2.5 h-2.5 rounded-full bg-slate-300"></span>
+          <span class="dot w-2.5 h-2.5 rounded-full bg-slate-300"></span>
+          <span class="dot w-2.5 h-2.5 rounded-full bg-slate-300"></span>
+          <span class="dot w-2.5 h-2.5 rounded-full bg-slate-300"></span>
+        </div>
+      </div>
+
+      <!-- DESKTOP grid -->
+      <div class="hidden md:grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <figure class="bg-white rounded-2xl border border-line shadow-sm p-4">
+          <img src="/assets/turf-sunrise.webp" alt="Sunrise turf" class="rounded-xl w-full h-44 object-cover" loading="lazy" decoding="async">
+          <figcaption class="mt-4"><h4 class="font-semibold">Sunrise</h4><p class="text-muted text-sm">Soft, natural look for yards.</p></figcaption>
+        </figure>
+        <figure class="bg-white rounded-2xl border border-line shadow-sm p-4">
+          <img src="/assets/turf-monterey.webp" alt="Monterey turf" class="rounded-xl w-full h-44 object-cover" loading="lazy" decoding="async">
+          <figcaption class="mt-4"><h4 class="font-semibold">Monterey</h4><p class="text-muted text-sm">Dense blades; realistic thatch.</p></figcaption>
+        </figure>
+        <figure class="bg-white rounded-2xl border border-line shadow-sm p-4">
+          <img src="/assets/palm.webp" alt="Palm Green turf" class="rounded-xl w-full h-44 object-cover" loading="lazy" decoding="async">
+          <figcaption class="mt-4"><h4 class="font-semibold">Palm Green</h4><p class="text-muted text-sm">Brighter color option.</p></figcaption>
+        </figure>
+        <figure class="bg-white rounded-2xl border border-line shadow-sm p-4">
+          <img src="/assets/turf-marathon.webp" alt="Marathon turf" class="rounded-xl w-full h-44 object-cover" loading="lazy" decoding="async">
+          <figcaption class="mt-4"><h4 class="font-semibold">Marathon</h4><p class="text-muted text-sm">Durable everyday lawn.</p></figcaption>
+        </figure>
+        <figure class="bg-white rounded-2xl border border-line shadow-sm p-4">
+          <img src="/assets/desert.webp" alt="Desert Green turf" class="rounded-xl w-full h-44 object-cover" loading="lazy" decoding="async">
+          <figcaption class="mt-4"><h4 class="font-semibold">Desert Green</h4><p class="text-muted text-sm">Good for drought-friendly yards.</p></figcaption>
+        </figure>
+        <figure class="bg-white rounded-2xl border border-line shadow-sm p-4">
+          <img src="/assets/turf-pet.webp" alt="Pet Turf" class="rounded-xl w-full h-44 object-cover" loading="lazy" decoding="async">
+          <figcaption class="mt-4"><h4 class="font-semibold">Pet Turf</h4><p class="text-muted text-sm">Fast drain + antimicrobial options.</p></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real Grass vs Turf -->
+  <section id="turf-compare" class="py-16">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-4xl font-bold title-accent">Real Grass vs. Turf</h2>
+        <p class="text-muted mt-2">Less upkeep, lower water use, and year-round green.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-3 gap-4 mb-8">
+        <div class="bg-white rounded-2xl border border-line shadow-sm p-5 text-center">
+          <div class="text-2xl font-bold">0</div>
+          <p class="text-muted text-sm">Weekly mowing</p>
+        </div>
+        <div class="bg-white rounded-2xl border border-line shadow-sm p-5 text-center">
+          <div class="text-2xl font-bold">Up to 55k gal</div>
+          <p class="text-muted text-sm">Water saved/year (typical yard)</p>
+        </div>
+        <div class="bg-white rounded-2xl border border-line shadow-sm p-5 text-center">
+          <div class="text-2xl font-bold">3–5 yrs</div>
+          <p class="text-muted text-sm">Typical payback from savings</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <article class="bg-white rounded-2xl border border-line shadow-sm p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <i data-feather="droplets" class="w-5 h-5 text-brand"></i>
+            <h3 class="text-xl font-semibold">Real Grass</h3>
+          </div>
+          <ul class="space-y-3 text-muted">
+            <li class="flex gap-3"><i data-feather="x-circle" class="w-5 h-5 text-rose-400 flex-shrink-0"></i><span>High water use + seasonal brown spots</span></li>
+            <li class="flex gap-3"><i data-feather="x-circle" class="w-5 h-5 text-rose-400 flex-shrink-0"></i><span>Weekly mowing, edging, weeds, fertilizer</span></li>
+            <li class="flex gap-3"><i data-feather="x-circle" class="w-5 h-5 text-rose-400 flex-shrink-0"></i><span>Mud and allergens after rain/irrigation</span></li>
+          </ul>
+        </article>
+
+        <article class="bg-white rounded-2xl border border-line shadow-sm p-6 ring-1 ring-brand/15">
+          <div class="flex items-center gap-3 mb-4">
+            <i data-feather="check-circle" class="w-5 h-5 text-success"></i>
+            <h3 class="text-xl font-semibold">Artificial Turf</h3>
+          </div>
+          <ul class="space-y-3 text-muted">
+            <li class="flex gap-3"><i data-feather="check" class="w-5 h-5 text-success flex-shrink-0"></i><span>Always green</span></li>
+            <li class="flex gap-3"><i data-feather="check" class="w-5 h-5 text-success flex-shrink-0"></i><span>Low maintenance</span></li>
+            <li class="flex gap-3"><i data-feather="check" class="w-5 h-5 text-success flex-shrink-0"></i><span>Drainage-built base; clean &amp; mud-free</span></li>
+          </ul>
+
+          <div class="mt-6">
+            <button id="open-savings" class="px-5 py-2.5 rounded-lg bg-ink text-white font-semibold hover:opacity-95">
+              Estimate Water Savings
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Savings modal -->
+    <div id="savings-modal" class="hidden fixed inset-0 z-50 bg-black/50 p-4">
+      <div class="bg-white rounded-2xl max-w-md mx-auto p-6 border border-line shadow-lg">
+        <div class="flex items-center justify-between mb-4">
+          <h4 class="text-lg font-semibold">Quick Savings Estimate</h4>
+          <button id="close-savings" class="p-2 rounded-lg hover:bg-soft border border-line" aria-label="Close">
+            <i data-feather="x"></i>
+          </button>
+        </div>
+
+        <label class="block text-sm mb-1 text-muted">Lawn size (sq ft)</label>
+        <input id="sqft" type="number" min="50" value="800"
+               class="w-full mb-3 px-3 py-2 border border-line rounded-lg focus:outline-none focus:ring-2 focus:ring-brand" />
+
+        <label class="block text-sm mb-1 text-muted">Water cost ($ / 1,000 gal)</label>
+        <input id="water" type="number" min="1" step="0.01" value="7.00"
+               class="w-full mb-4 px-3 py-2 border border-line rounded-lg focus:outline-none focus:ring-2 focus:ring-brand" />
+
+        <p class="text-sm text-muted mb-4">
+          Uses a simple estimate of ~55 gallons per sq ft per year for living grass irrigation (varies by usage and area).
+        </p>
+
+        <div class="bg-soft rounded-xl p-4 text-center border border-line">
+          <div class="text-2xl font-bold" id="galOut">—</div>
+          <div class="text-muted text-sm">Gallons saved per year</div>
+          <div class="mt-3 text-2xl font-bold" id="costOut">—</div>
+          <div class="text-muted text-sm">Estimated $ saved per year</div>
+        </div>
+
+        <button id="calc" class="mt-6 w-full bg-brand text-white font-semibold py-2.5 rounded-lg hover:opacity-95">
+          Recalculate
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Where Turf Works Well -->
+  <section id="use-cases" class="py-16 bg-soft">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-4xl font-bold title-accent">Great Places for Turf</h2>
+        <p class="text-muted mt-2">Designed for daily life and SoCal weather.</p>
+      </div>
+
+      <!-- MOBILE swipe -->
+      <div class="md:hidden">
+        <div class="flex overflow-x-auto no-scrollbar gap-4 px-5 -mx-5 snap-x snap-mandatory"
+             style="scroll-padding-left:1.25rem;scroll-padding-right:1.25rem"
+             data-track="uses">
+          <article class="flex-none w-[85vw] max-w-[340px] bg-white rounded-2xl border border-line shadow-sm p-5 snap-center">
+            <h3 class="text-lg font-semibold mb-1">Front Yards</h3>
+            <p class="text-muted text-sm">Instant curb appeal with no mowing.</p>
+          </article>
+          <article class="flex-none w-[85vw] max-w-[340px] bg-white rounded-2xl border border-line shadow-sm p-5 snap-center">
+            <h3 class="text-lg font-semibold mb-1">Backyards</h3>
+            <p class="text-muted text-sm">Always-green lounge and play space.</p>
+          </article>
+          <article class="flex-none w-[85vw] max-w-[340px] bg-white rounded-2xl border border-line shadow-sm p-5 snap-center">
+            <h3 class="text-lg font-semibold mb-1">Pet Areas</h3>
+            <p class="text-muted text-sm">Clean surfaces with odor control options.</p>
+          </article>
+          <article class="flex-none w-[85vw] max-w-[340px] bg-white rounded-2xl border border-line shadow-sm p-5 snap-center">
+            <h3 class="text-lg font-semibold mb-1">Pool Areas</h3>
+            <p class="text-muted text-sm">Comfort underfoot and tidy edges.</p>
+          </article>
+          <article class="flex-none w-[85vw] max-w-[340px] bg-white rounded-2xl border border-line shadow-sm p-5 snap-center">
+            <h3 class="text-lg font-semibold mb-1">Rooftops &amp; Balconies</h3>
+            <p class="text-muted text-sm">Lightweight green space with proper drainage.</p>
+          </article>
+          <article class="flex-none w-[85vw] max-w-[340px] bg-white rounded-2xl border border-line shadow-sm p-5 snap-center">
+            <h3 class="text-lg font-semibold mb-1">Side Yards / Walkways</h3>
+            <p class="text-muted text-sm">No mud—clean transitions.</p>
+          </article>
+        </div>
+
+        <div class="flex justify-center gap-2 mt-4" data-dots="uses">
+          <span class="dot w-2.5 h-2.5 rounded-full bg-slate-300"></span>
+          <span class="dot w-2.5 h-2.5 rounded-full bg-slate-300"></span>
+          <span class="dot w-2.5 h-2.5 rounded-full bg-slate-300"></span>
+          <span class="dot w-2.5 h-2.5 rounded-full bg-slate-300"></span>
+          <span class="dot w-2.5 h-2.5 rounded-full bg-slate-300"></span>
+          <span class="dot w-2.5 h-2.5 rounded-full bg-slate-300"></span>
+        </div>
+      </div>
+
+      <!-- DESKTOP grid -->
+      <div class="hidden md:grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl border border-line shadow-sm p-6"><h3 class="font-semibold mb-1">Front Yards</h3><p class="text-muted">Instant curb appeal with no mowing.</p></div>
+        <div class="bg-white rounded-2xl border border-line shadow-sm p-6"><h3 class="font-semibold mb-1">Backyards</h3><p class="text-muted">Always-green lounge and play space.</p></div>
+        <div class="bg-white rounded-2xl border border-line shadow-sm p-6"><h3 class="font-semibold mb-1">Pet Areas</h3><p class="text-muted">Clean surfaces with odor control options.</p></div>
+        <div class="bg-white rounded-2xl border border-line shadow-sm p-6"><h3 class="font-semibold mb-1">Pool Areas</h3><p class="text-muted">Comfort underfoot and tidy edges.</p></div>
+        <div class="bg-white rounded-2xl border border-line shadow-sm p-6"><h3 class="font-semibold mb-1">Rooftops &amp; Balconies</h3><p class="text-muted">Lightweight green space with proper drainage.</p></div>
+        <div class="bg-white rounded-2xl border border-line shadow-sm p-6"><h3 class="font-semibold mb-1">Side Yards / Walkways</h3><p class="text-muted">No mud—clean transitions.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mini Gallery -->
+  <section id="gallery" class="max-w-7xl mx-auto px-5 sm:px-6 py-12 md:py-16">
+    <h3 class="text-2xl md:text-3xl font-bold mb-6 title-accent">Recent Turf Work</h3>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <img src="/assets/rt1.webp" alt="Turf project" class="rounded-2xl border border-line object-cover h-56 w-full cursor-zoom-in">
+      <img src="/assets/rt2.webp" alt="Turf project" class="rounded-2xl border border-line object-cover h-56 w-full cursor-zoom-in">
+      <img src="/assets/rt3.webp" alt="Turf project" class="rounded-2xl border border-line object-cover h-56 w-full cursor-zoom-in">
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="bg-soft py-16">
+    <div class="max-w-6xl mx-auto px-5 sm:px-6 text-center">
+      <h2 class="text-2xl md:text-4xl font-bold title-accent">What Customers Say</h2>
+
+      <div class="mt-10 grid md:grid-cols-3 gap-6 text-left">
+        <div class="bg-white border border-line shadow-sm rounded-2xl p-7">
+          <p class="text-muted mb-4">“Backyard looks great and drains well. The edges are clean and the turf feels natural.”</p>
+          <div class="font-semibold">— L. Miller, Temecula</div>
+        </div>
+        <div class="bg-white border border-line shadow-sm rounded-2xl p-7">
+          <p class="text-muted mb-4">“We have two dogs—huge improvement. No mud and it stays easy to clean.”</p>
+          <div class="font-semibold">— P. Lee, Encino</div>
+        </div>
+        <div class="bg-white border border-line shadow-sm rounded-2xl p-7">
+          <p class="text-muted mb-4">“Putting green came out exactly how we wanted. Smooth roll and good detail work.”</p>
+          <div class="font-semibold">— A. Johnson, Calabasas</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-4xl font-bold title-accent">Get a Free Estimate</h2>
+        <p class="text-muted mt-2">Tell us what you need—we’ll follow up to schedule a quick on-site quote.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <form action="https://api.web3forms.com/submit" method="POST" id="quoteForm" class="space-y-5">
+          <input type="hidden" name="access_key" value="1df7edac-fd81-4287-b014-b768951aac91">
+          <input type="hidden" name="subject" value="New Quote Request - Turf Page">
+          <input type="hidden" name="from_name" value="Omdan Development Website">
+          <input type="hidden" name="redirect" value="https://omdandevelopment.com/thankyou.html">
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+          <label class="block">
+            <span class="block text-sm font-medium mb-1 text-muted">Full Name</span>
+            <input name="name" type="text" required autocomplete="name"
+              class="w-full px-4 py-2.5 border border-line rounded-lg focus:outline-none focus:ring-2 focus:ring-brand">
+          </label>
+
+          <label class="block">
+            <span class="block text-sm font-medium mb-1 text-muted">Phone Number</span>
+            <input name="phone" type="tel" required autocomplete="tel"
+              class="w-full px-4 py-2.5 border border-line rounded-lg focus:outline-none focus:ring-2 focus:ring-brand">
+          </label>
+
+          <label class="block">
+            <span class="block text-sm font-medium mb-1 text-muted">Email Address</span>
+            <input name="email" type="email" required autocomplete="email"
+              class="w-full px-4 py-2.5 border border-line rounded-lg focus:outline-none focus:ring-2 focus:ring-brand">
+          </label>
+
+          <label class="block">
+            <span class="block text-sm font-medium mb-1 text-muted">Project Address</span>
+            <input name="address" type="text" required autocomplete="street-address"
+              class="w-full px-4 py-2.5 border border-line rounded-lg focus:outline-none focus:ring-2 focus:ring-brand">
+          </label>
+
+          <label class="block">
+            <span class="block text-sm font-medium mb-1 text-muted">Project Details</span>
+            <textarea name="message" rows="4"
+              class="w-full px-4 py-2.5 border border-line rounded-lg focus:outline-none focus:ring-2 focus:ring-brand"></textarea>
+          </label>
+
+          <div class="h-captcha" data-captcha="true"></div>
+
+          <button type="submit"
+            class="bg-brand text-white px-6 py-3 rounded-lg font-semibold hover:opacity-95 w-full">
+            Submit Request
+          </button>
+        </form>
+
+        <aside class="bg-soft border border-line p-8 rounded-2xl shadow-sm">
+          <h3 class="text-xl font-bold mb-6">Contact</h3>
+          <ul class="space-y-5 text-muted">
+            <li class="flex items-start gap-3">
+              <i data-feather="phone" class="w-5 h-5 text-brand"></i>
+              <div><div class="font-medium text-ink">Phone</div><div>(951)-292-0703</div></div>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-feather="mail" class="w-5 h-5 text-brand"></i>
+              <div><div class="font-medium text-ink">Email</div><div>omdandevelopment@gmail.com</div></div>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-feather="map-pin" class="w-5 h-5 text-brand"></i>
+              <div><div class="font-medium text-ink">Service Area</div><div>Desert &amp; Inland Empire Region</div></div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ink text-white py-12">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6">
+      <div class="grid md:grid-cols-5 gap-8">
+
+        <div>
+          <div class="flex items-center gap-3">
+            <img src="/assets/logo.webp" alt="Omdan Development logo" class="h-10 w-auto" />
+            <span class="font-semibold text-lg">Omdan Development</span>
+          </div>
+          <p class="mt-4 text-white/75">Outdoor upgrades and installs across Los Angeles and surrounding areas.</p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4">Services</h4>
+          <ul class="space-y-2 text-white/75">
+            <li><a class="hover:text-white" href="/#services">All Services</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-white/75">
+            <li><a href="/#about" class="hover:text-white transition">About</a></li>
+            <li><a href="#gallery" class="hover:text-white transition">Gallery</a></li>
+            <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+
+<!-- Cities -->
+<div>
+  <h4 class="font-semibold mb-4">Included Cities</h4>
+  <ul class="space-y-2 text-white/75">
+    <li><a class="hover:text-white transition" href="/artificial-turf/palm-springs/">Palm Springs</a></li>
+    <li><a class="hover:text-white transition" href="/artificial-turf/desert-hot-springs/">Desert Hot Springs</a></li>
+    <li><a class="hover:text-white transition" href="/artificial-turf/palm-desert/">Palm Desert</a></li>
+    <li><a class="hover:text-white transition" href="/artificial-turf/twentynine-palms/">Twentynine Palms</a></li>
+    <li><a class="hover:text-white transition" href="/artificial-turf/yucca-valley/">Yucca Valley</a></li>
+  </ul>
+</div>
+
+        <div>
+          <h4 class="font-semibold mb-4">Contact</h4>
+          <ul class="space-y-3 text-white/75">
+            <li class="flex items-center gap-2"><i data-feather="phone" class="w-5 h-5"></i><span>(951)-292-0703</span></li>
+            <li class="flex items-center gap-2"><i data-feather="mail" class="w-5 h-5 flex-shrink-0"></i><span>omdandevelopment@gmail.com</span></li>
+            <li class="flex items-center gap-2"><i data-feather="map-pin" class="w-5 h-5"></i><span>Desert &amp; Inland Empire Region</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-white/60">
+        <p>© 2025 Omdan Development Inc. All rights reserved.</p>
+        <div class="flex items-center gap-6 mt-4 md:mt-0">
+          <a href="/privacy/" class="hover:text-white transition">Privacy Policy</a>
+          <div class="flex gap-4">
+            <a class="hover:text-white" href="#" aria-label="Facebook"><i data-feather="facebook"></i></a>
+            <a class="hover:text-white" href="#" aria-label="Instagram"><i data-feather="instagram"></i></a>
+            <a class="hover:text-white" href="#" aria-label="Twitter"><i data-feather="twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    const toggleBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    toggleBtn?.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+      toggleBtn.setAttribute('aria-expanded', String(!isOpen));
+    });
+
+    // Scroll reveal
+    function scrollReveal(){
+      const els = document.querySelectorAll('.scroll-reveal');
+      const screen = window.innerHeight / 1.2;
+      els.forEach(el=>{
+        const top = el.getBoundingClientRect().top;
+        if(top < screen){ el.classList.add('visible'); }
+      });
+    }
+    window.addEventListener('scroll', scrollReveal);
+    window.addEventListener('load', scrollReveal);
+
+    // Smooth anchor scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target){
+          e.preventDefault();
+          mobileMenu?.classList.add('hidden');
+          target.scrollIntoView({behavior:'smooth'});
+        }
+      })
+    });
+
+    // Feather
+    feather.replace();
+
+    // Better carousel dots: picks the card closest to the center (works with gaps + fixed card widths)
+    function bindCarousel(name){
+      const track = document.querySelector(`[data-track="${name}"]`);
+      const dotsWrap = document.querySelector(`[data-dots="${name}"]`);
+      if(!track || !dotsWrap) return;
+      const dots = Array.from(dotsWrap.querySelectorAll('.dot'));
+      const items = Array.from(track.children);
+
+      function activeIndex(){
+        const trackRect = track.getBoundingClientRect();
+        const center = trackRect.left + trackRect.width / 2;
+        let best = 0;
+        let bestDist = Infinity;
+
+        items.forEach((el, i)=>{
+          const r = el.getBoundingClientRect();
+          const elCenter = r.left + r.width / 2;
+          const dist = Math.abs(center - elCenter);
+          if(dist < bestDist){ bestDist = dist; best = i; }
+        });
+        return best;
+      }
+
+      function paint(){
+        const idx = activeIndex();
+        dots.forEach((d,i)=> d.classList.toggle('bg-brand', i === idx));
+      }
+
+      function goTo(i){
+        items[i]?.scrollIntoView({behavior:'smooth', inline:'center', block:'nearest'});
+      }
+
+      track.addEventListener('scroll', ()=> requestAnimationFrame(paint));
+      dots.forEach((d,i)=> d.addEventListener('click', ()=> goTo(i)));
+      paint();
+    }
+
+    bindCarousel('turf-landscape');
+    bindCarousel('uses');
+
+    // Lightbox
+    document.querySelectorAll('#gallery img, [data-track="turf-landscape"] img').forEach(img=>{
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', ()=>{
+        const overlay = document.createElement('div');
+        overlay.className = 'fixed inset-0 bg-black/80 flex items-center justify-center z-50 cursor-zoom-out p-4';
+        overlay.innerHTML = `<img src="${img.src}" class="max-h-[90vh] max-w-[92vw] rounded-2xl shadow-2xl animate-fade-in" alt="">`;
+        document.body.appendChild(overlay);
+        overlay.addEventListener('click', ()=> overlay.remove());
+      });
+    });
+
+    // Savings modal
+    const openBtn = document.getElementById('open-savings');
+    const modal   = document.getElementById('savings-modal');
+    const closeBtn= document.getElementById('close-savings');
+    const sqftEl  = document.getElementById('sqft');
+    const waterEl = document.getElementById('water');
+    const galOut  = document.getElementById('galOut');
+    const costOut = document.getElementById('costOut');
+    const calcBtn = document.getElementById('calc');
+
+    function calcSavings(){
+      const sqft = Math.max(0, Number(sqftEl.value)||0);
+      const costPerK = Math.max(0, Number(waterEl.value)||0);
+      const gallons = Math.round(sqft * 55);
+      const dollars = (gallons/1000) * costPerK;
+      galOut.textContent  = gallons.toLocaleString();
+      costOut.textContent = '$' + Math.round(dollars).toLocaleString();
+    }
+
+    openBtn?.addEventListener('click', ()=>{ modal.classList.remove('hidden'); calcSavings(); });
+    closeBtn?.addEventListener('click', ()=> modal.classList.add('hidden'));
+    modal?.addEventListener('click', (e)=>{ if(e.target === modal) modal.classList.add('hidden'); });
+    calcBtn?.addEventListener('click', calcSavings);
+  </script>
+
+</body>
+</html>
